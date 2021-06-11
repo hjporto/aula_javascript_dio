@@ -1,37 +1,81 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="pt-br">
-
 <head>
-    <title>Aula Javascript </title>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+<title>Minha Página</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="js/main.js"></script>
+<style>
+body{
+	background-color:#000000;
+	}
+.texto{
+	text-align:center;
+	margin=0;
+	color:#FFFFFF;	
+	}
+p{
+	margin=0;
+	padding: 15px;
+	color:#FFFFFF;
+	}
+	
+</style>
+
+
 </head>
-
 <body>
+<h1 class="texto">Javascript Page</h1>
+<pre>
+<p>
+	//alert("Meu Primeiro JS")
+	var nome1 ="José";
+	var nome2 ="Maria";
+	var idade1 =29;
+	var idade2 = 10;
+	var soma=(idade1+idade2);
+	var frase = "Brasil é melhor time do mundo";
 
-    <Section>
-        <header class="titulo">Página de Teste de Código Javascript</header>
-        <br><br><br>
+/*Criação de variáveis e uso do alert
+	alert(nome1 + " "+ nome2+" " +(idade1+idade2));
+	console.log(nome1);
+	console.log(soma);
+	console.log(frase);
+	console.log(frase.toUpperCase());*/
 
-        <article class="texto">
-            nome1 = "Maria";<br>
-            var nome2 = "José";<br>
-            var idade1 = 29;<br>
-            var idade2 = 20;<br>
+//Ações com lista
+	var lista = ["macã","pêra","laranja"];
+	lista.push("banana");
+	console.log(lista);
+
+//Datas
+	nome1 =prompt("Digite seu nome: ");
+	
+	alert("Homem = 1"+"\n"+"e Mulher = 2");
+	sexo=prompt("Digite seu sexo: ");
+	
+	//alert(typeof sexo);
+		
+	/*if(sexo==1){
+		alert("Seja bem vindo "+nome1);
+	}else{
+		alert("Seja bem vinda "+nome1);}*/
+	
+	switch(sexo){
+		case "1":	alert("Seja bem vindo "+nome1);
+		break;
+		case "2":	alert("Seja bem vinda "+nome1);
+		break;
+		default: alert("Escolha uma opção: ")
+	}
+	var tempo = new Date();
+	alert("Hoje é dia: " + tempo.getDate()+ " / " + ( tempo.getMonth()+1)+ " / " +(tempo.getYear()+1900));
+	</p>
+	</pre>
+	
 
 
-            <h3 class="subtitulo">Teste em pop up</h3><br>
-            alert(nome1 + " " + idade1 + " e " + nome2 + " " + idade2);<br>
-            alert("idade de " + nome1 + " + idade de " + nome2 + " = " + (idade1 + idade2));<br>
-
-            <h3 class="subtitulo">Teste em console</h3><br>
-            console.log(nome1 + " " + idade1 + " e " + nome2 + " " + idade2);<br>
-            console.log(" idade de " + nome1 + " + idade de " + nome2 + "=" + (idade1 + idade2));<br>
 
 
-        </article>
-    </Section>
 </body>
 
 </html>
