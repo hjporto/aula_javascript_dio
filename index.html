@@ -1,81 +1,107 @@
 <!Doctype html>
 <html lang="pt-br">
+
 <head>
-<title>Minha Página</title>
-<meta charset="utf-8">
-<script type="text/javascript" src="js/main.js"></script>
-<style>
-body{
-	background-color:#000000;
-	}
-.texto{
-	text-align:center;
-	margin=0;
-	color:#FFFFFF;	
-	}
-p{
-	margin=0;
-	padding: 15px;
-	color:#FFFFFF;
-	}
-	
-</style>
+	<title>Minha Página</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/main.js"></script>
+	<style>
+		body {
+			background-color: #000000;
+		}
 
+		h1 {
+			text-align: center;
+			margin=0;
+			color: #9a9f00;
+			border 20px;
+			border: 3px solid #FFFFFF;
+			border-top-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+		}
 
+		.texto {
+			text-align: center;
+			margin=0;
+			color: #FFFFFF;
+		}
+
+		p {
+			margin=0;
+			padding: 15px;
+			color: #FFFFFF;
+		}
+
+		h2 {
+			margin: 0;
+			padding-left: 120px;
+			color: #9a9f00;
+		}
+	</style>
 </head>
+
 <body>
-<h1 class="texto">Javascript Page</h1>
-<pre>
-<p>
-	//alert("Meu Primeiro JS")
-	var nome1 ="José";
-	var nome2 ="Maria";
-	var idade1 =29;
-	var idade2 = 10;
-	var soma=(idade1+idade2);
-	var frase = "Brasil é melhor time do mundo";
+	<h1>Javascript Page</h1>
+	<pre>
+	<h2 >Arquivo Font main.js</h2>
+	<p>
+		//alert("Meu Primeiro JS")
+		var nome1 = "José";
+		var nome2 = "Maria";
+		var idade1 = 29;
+		var idade2 = 10;
+		var soma = (idade1 + idade2);
+		var frase = "Brasil é melhor time do mundo";
 
-/*Criação de variáveis e uso do alert
-	alert(nome1 + " "+ nome2+" " +(idade1+idade2));
-	console.log(nome1);
-	console.log(soma);
-	console.log(frase);
-	console.log(frase.toUpperCase());*/
+		//Criação de variáveis e uso do alert
+		alert(nome1 + " "+ nome2+" " +(idade1+idade2));
+		console.log(nome1);
+		console.log(soma);
+		console.log(frase);
+		console.log(frase.toUpperCase());
 
-//Ações com lista
-	var lista = ["macã","pêra","laranja"];
-	lista.push("banana");
-	console.log(lista);
+		//Ações com lista
+		var lista = ["macã", "pêra", "laranja"];
+		lista.push("banana");
+		console.log(lista);
 
-//Datas
-	nome1 =prompt("Digite seu nome: ");
-	
-	alert("Homem = 1"+"\n"+"e Mulher = 2");
-	sexo=prompt("Digite seu sexo: ");
-	
-	//alert(typeof sexo);
-		
-	/*if(sexo==1){
+		//Datas
+		nome1 = prompt("Digite seu nome: ");
+
+		alert("Homem = 1" + "\n" + "e Mulher = 2");
+		sexo = prompt("Digite seu sexo: ");
+
+		//alert(typeof sexo);
+
+		if(sexo==1){
 		alert("Seja bem vindo "+nome1);
-	}else{
-		alert("Seja bem vinda "+nome1);}*/
-	
-	switch(sexo){
-		case "1":	alert("Seja bem vindo "+nome1);
+		}else{
+		alert("Seja bem vinda "+nome1);}
+
+		switch (sexo) {
+		case "1": alert("Seja bem vindo " + nome1);
 		break;
-		case "2":	alert("Seja bem vinda "+nome1);
+		case "2": alert("Seja bem vinda " + nome1);
 		break;
 		default: alert("Escolha uma opção: ")
-	}
-	var tempo = new Date();
-	alert("Hoje é dia: " + tempo.getDate()+ " / " + ( tempo.getMonth()+1)+ " / " +(tempo.getYear()+1900));
+		}
+		var tempo = new Date();
+		alert("Hoje é dia: " + tempo.getDate() + " / " + (tempo.getMonth() + 1) + " / " + (tempo.getYear() + 1900));
+
+		//funções
+		function soma(n1, n2) {
+		return n1 + n2;
+		}
+
+		alert("n1 é: " + typeof n1);
+		alert("n1 é: " + typeof n2);
+		alert("1 + 9 = " + soma(1, 19));
+		
+		By @Hugo Porto
 	</p>
-	</pre>
-	
-
-
-
-
+</pre>
 </body>
 
 </html>
