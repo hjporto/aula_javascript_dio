@@ -7,9 +7,8 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<style>
 		body {
-			background-color: #000000;
+		margin:auto;				
 		}
-
 		h1 {
 			text-align: center;
 			margin=0;
@@ -21,19 +20,16 @@
 			border-top-right-radius: 50%;
 			border-bottom-left-radius: 50%;
 		}
-
 		.texto {
 			text-align: center;
 			margin=0;
 			color: #FFFFFF;
 		}
-
 		p {
 			margin=0;
 			padding: 15px;
-			color: #FFFFFF;
+			color: #000000;
 		}
-
 		h2 {
 			margin: 0;
 			padding-left: 120px;
@@ -44,6 +40,14 @@
 
 <body>
 	<h1>Javascript Page</h1>
+	
+	<!--<h2> Digite seu nome: <input id="nome"> </h2>-->
+	<button type="button"  onmouseover="trocar(this)"
+	onclick="clicou(this)" >Não Clique aqui</button>
+	
+	<h2 id="agradecimento" >Não Clique com o mouse</h2>
+	<p id="mousemove" onmouseover="voltar(this)" >Não tire o mouse</p>
+	
 	<pre>
 	<h2 >Arquivo Font main.js</h2>
 	<p>
